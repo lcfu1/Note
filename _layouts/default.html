@@ -52,7 +52,7 @@
 		var TestObject = Bmob.Object.extend("{{ site.title }}");
 		var testObject = new TestObject();
 		testObject.save({
-			posts: "{{ page.name }}"
+			posts: "{{ page.url }}"
 		}, {
 			success: function(object) {
 			},
@@ -63,7 +63,7 @@
 		var TestObject = Bmob.Object.extend("{{ site.title }}");
 		var query = new Bmob.Query(TestObject);
 		// 查询所有数据
-		query.equalTo("posts", "{{ page.name }}");
+		query.equalTo("posts", "{{ page.url }}");
 		query.find({
 			success: function(results) {
 				document.getElementById("numb").innerHTML = "阅读   "+results.length;
