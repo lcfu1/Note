@@ -41,3 +41,10 @@
 .fixed-btn .go-home {
     /*solid #eee;*/
 }
+.test{
+	background: #f6f6f6;
+	padding-top: 1px;
+	padding-right:1px;
+	padding-left:20px;
+	padding-bottom: 1px;
+}

@@ -47,5 +47,20 @@ author：lcfu1
 - **jQuery基础**
 
   - [下载和使用](jQuery/download-and-use.md)
-  
   - [语法](jQuery/jQuery-syntax.md)
+
+## Git
+
+- 笔记
+  - [Git命令总结](Git/git(1).md)
+
+## SVG
+
+- 笔记
+  - [SVG(1)](SVG/SVG(1).md)
+  - [SVG(2)](SVG/SVG(2).md)
+
+### Markdown
+
+- 笔记
+  - [基础语法](Markdown/markdown.md)
