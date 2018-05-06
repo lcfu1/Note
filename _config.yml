@@ -1,1 +1,15 @@
-theme: jekyll-theme-cayman
+#title必须设置和github上该repository的name一致，如果是 用户.github.io，则可以不填。
+title: Note
+
+#author设置为github用户名
+author: lcfu1
+
+#记得把下面这个theme注释掉
+#theme: jekyll-theme-cayman
+
+#这里的Application ID和REST API Key可以通过注册bmob，然后新建一个项目，从而获得该项目的Application ID和REST API Key，用于统计文章阅读次数。
+#Application ID
+id: d6f5df1e30903a0a49634f3ac9c96ecf
+
+#REST API Key
+key: 29bc5d837e8c6054da46fde3ddfce1c8
