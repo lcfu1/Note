@@ -1,4 +1,4 @@
-# Android自定义View（二）
+## Android自定义View（二）
 
 >要点：
 >
@@ -12,13 +12,13 @@
 >
 >5、参考
 
-#### 1、自定义View绘制流程
+### 1、自定义View绘制流程
 
 ![image](http://upload-images.jianshu.io/upload_images/6025530-da79ee12c89dbad3..jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### 构造函数
+#### 构造函数
 
-四种重载：
+**四种重载：**
 
 ```
 //一般在直接New一个View的时候调用。
@@ -30,15 +30,15 @@ public void SimpleView(Context context, AttributeSet attrs, int defStyleAttr) {}
 public void SimpleView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {}
 ```
 
-使用：
+**使用：**
 
-在activity中：
+*在activity中：*
 
 ```
 SimpleView view=new SimpleView(this);
 ```
 
-在layout中：
+*在layout中：*
 
 ```
 <com.lcfu1.view.SimpleView
@@ -46,7 +46,7 @@ SimpleView view=new SimpleView(this);
   android:layout_height"wrap_content"/>
 ```
 
-##### onMeasure()
+#### onMeasure()
 
 测量View大小，View的大小不仅由自身所决定，同时也会受到父控件的影响。
 
@@ -69,7 +69,7 @@ SpecMode类型：
 - EXACTLY：表示父视图已经确切的指定了子视图的大小，match_parent、具体的数值（如100dp）对应的都是这个模式。
 - AT_MOST：表示子视图具体大小没有尺寸限制，但是存在上限，上限一般为父视图大小，一般来说wrap_content对应这种模式。
 
-##### onSizeChanged()
+#### onSizeChanged()
 
 ```
 @Override
@@ -80,7 +80,7 @@ protected void onSizeChanged(int w, int h, int oldw, int oldh) {
 
 在视图大小发生改变时调用。w和h就是View最终的大小。
 
-###### onLayout()
+##### onLayout()
 
 ```
 @Override
@@ -95,7 +95,7 @@ protected void onLayout(boolean changed, int left, int top, int right, int botto
 
 对于非ViewGroup类型来说，它需要做的工作只是测量尺寸与绘制自身内容。
 
-##### onDraw()
+#### onDraw()
 
 ```
 @Override
@@ -107,7 +107,7 @@ public void onDraw(Canvas canvas)
 
 就是实际绘制内容。
 
-#### 2、绘制随手移动的小球
+### 2、绘制随手移动的小球
 
 ```
 package com.lcfu1.view;
@@ -167,7 +167,7 @@ public class DrawView extends View
 
 在现实中要画东西就需要画纸，而要在屏幕上面画东西，则需要[Canvas](https://developer.android.google.cn/reference/android/graphics/Canvas.html)，也就是画布。
 
-#### 3、Canvas
+### 3、Canvas
 
 常用方法如下：
 
@@ -340,7 +340,7 @@ canvas.drawRect(0,0,100,100,mPaint);//画距形
 
 ![image.png](https://upload-images.jianshu.io/upload_images/6025530-d342d6f661880810.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### 4、Paint
+### 4、Paint
 
 上面简述了Canvas的使用，要想在Canvas上画东西，肯定不能少了Paint，也就是画笔。
 
@@ -367,7 +367,7 @@ paint.setStrokeCap(Paint.Cap.ROUND);
 paint.setStrokeJoin(Paint.Join.ROUND);
 ```
 
-#### 5、参考
+### 5、参考
 
 - [http://www.gcssloop.com/customview/Canvas_BasicGraphics](http://www.gcssloop.com/customview/Canvas_BasicGraphics)
 - [https://developer.android.google.cn/reference/android/graphics/Canvas.html](https://developer.android.google.cn/reference/android/graphics/Canvas.html)

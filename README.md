@@ -14,8 +14,6 @@ author：lcfu1
   
   - [Android自定义View（四）](Android/CustomView/CustomView4.md)
   
-  - [Android自定义View（四）](Android/CustomView4.md)
-  
 - **Android知识点**
 
   - [Android知识点](Android/AndroidKnowledge.md)

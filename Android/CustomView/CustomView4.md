@@ -1,4 +1,4 @@
-# Android自定义View（四）
+## Android自定义View（四）
 
 >要点：
 >
@@ -6,9 +6,9 @@
 >
 >2、参考
 
-#### 1、绘制图片
+### 1、绘制图片
 
-##### drawPicture(矢量图)
+#### drawPicture(矢量图)
 
 使用[Picture](https://developer.android.google.cn/reference/android/graphics/Picture.html)前请关闭硬件加速，以免引起不必要的问题！请参考[Android的硬件加速及可能导致的问题](https://github.com/GcsSloop/AndroidNote/issues/7)
 
@@ -46,7 +46,7 @@ writeToStream(OutputStream stream)|将Picture中内容写出到输出流中，�
 (3)[PictureDrawable](https://developer.android.google.cn/reference/android/graphics/drawable/PictureDrawable.html)的draw方法
 - 对Canvas没有影响，可操作性较强。
 
-简单示例：
+*简单示例：*
 
 ```
 package com.lcfu1.view;
@@ -111,7 +111,7 @@ public class canvas extends View {
 }
 ```
 
-layout中：
+*layout中：*
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -126,11 +126,11 @@ layout中：
 </LinearLayout>
 ```
 
-效果如下：
+*效果如下：*
 
 ![image.png](https://upload-images.jianshu.io/upload_images/6025530-db93df89e24b1b2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### drawBitmap(位图)
+#### drawBitmap(位图)
 
 drawBitmap的常用方法如下：
 
@@ -146,7 +146,7 @@ public void drawBitmap(Bitmap bitmap, Rect src, Rect dst, Paint paint)
 public void drawBitmap(Bitmap bitmap, Rect src, RectF dst, Paint paint)
 ```
 
-简单示例如下：
+*简单示例如下：*
 
 ```
 import android.content.Context;
@@ -205,7 +205,7 @@ public class picture extends View {
 }
 ```
 
-效果如下：
+*效果如下：*
 
 ![image.png](https://upload-images.jianshu.io/upload_images/6025530-0615fd5fd988bd17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -213,10 +213,12 @@ public class picture extends View {
 上面例子是通过BitmapFactory从资源文件中获取Bitmap的，获取Bitmap的三种方式如下：
 
 - 通过Bitmap创建：复制一个已有的Bitmap(新Bitmap状态和原有的一致)或者创建一个空白的Bitmap(内容可改变)。
+
 - 通过BitmapDrawable获取：从资源文件、内存卡、网络等地方获取一张图片并转换为内容不可变的Bitmap。
+
 - 通过BitmapFactory获取：从资源文件、内存卡、网络等地方获取一张图片并转换为内容不可变的Bitmap。
 
-BitmapFactory获取Bitmap的方法：
+*BitmapFactory获取Bitmap的方法：*
 
 - 从资源文件drawable、mipmap、raw、assets获取：
 
@@ -250,7 +252,7 @@ inputStream.close();
 
 注：从内存卡或网络上获取的方法我还没实现，有待解决！！
 
-#### 2、参考
+### 2、参考
 
 - http://www.gcssloop.com/customview/CustomViewIndex/
 

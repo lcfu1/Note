@@ -1,4 +1,4 @@
-# Android自定义View（一）
+## Android自定义View（一）
 
 >要点：
 >
@@ -18,15 +18,15 @@
 >
 >8、参考
 
-#### 1、屏幕坐标系
+### 1、屏幕坐标系
 
-手机屏幕左上角为坐标原点，向右为x轴增大方向，向下为y轴增大方向
+手机屏幕左上角为坐标原点，向右为x轴增大方向，向下为y轴增大方向。
 
 如下图：
 
 ![1.png](https://upload-images.jianshu.io/upload_images/6025530-0ad7a028d14ead9a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### 2、view的坐标
+### 2、view的坐标
 
 view的坐标是相对父容器而言的，包括：getTop()、getBottom()、getLeft()、getRight()。
 
@@ -35,13 +35,11 @@ view的坐标是相对父容器而言的，包括：getTop()、getBottom()、get
 ![2.png](https://upload-images.jianshu.io/upload_images/6025530-3915e3c650d35ffe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 从android3.0开始，View增加了几个参数：x、y、translationX和traslationY，x和y是View左上角的坐标，而translationX和traslationY是View左上角相对于父容器的偏移量。这几个参数是相对于父容器的坐标，并且translationX和traslationY的默认值是0，和View的四个基本的位置参数一样，View也提供了get和set方法。这几个参数的换算关系如下：
-x=left+translationX
-y=top+translationY
-View在平移的过程中， top和left表示原始左上角的位置信息，它们的值并不会发生改变，此时发生改变的是x、y、translationX和traslationY这四个参数。
+x=left+translationX、y=top+translationY，View在平移的过程中， top和left表示原始左上角的位置信息，它们的值并不会发生改变，此时发生改变的是x、y、translationX和traslationY这四个参数。
 
-#### 3、MotionEvent和TouchSlop
+### 3、MotionEvent和TouchSlop
 
-##### MotionEvent中的getRaw和get
+#### MotionEvent中的getRaw和get
 
 event.getRowX()、event.getRowY()：触摸点相对于屏幕原点的x坐标
 
@@ -49,11 +47,11 @@ event.getX()、event.getY()： 触摸点相对于其所在组件原点的x坐标
 
 ![3.png](https://upload-images.jianshu.io/upload_images/6025530-56c44a9c570205a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### TouchSlop
+#### TouchSlop
 
 TouchSlop是系统所能识别出的被认为是滑动的最小距离，就是两次滑动之间的距离小于这个常量，系统就不认为你在进行滑动操作，这是一个常量，和设备有关。获取方法：ViewConfiguration.get(getContext()).getScaledTouchSlop()。
 
-#### 4、角度与弧度
+### 4、角度与弧度
 
 注：默认的屏幕坐标系中角度增大方向为顺时针
 
@@ -71,7 +69,7 @@ TouchSlop是系统所能识别出的被认为是滑动的最小距离，就是�
 
 角度和弧度的换算：rad = deg x π / 180，deg = rad x 180 / π，其中rad是弧度，deg是角度。圆的周长为2πr，由上面弧度概念可知圆360度对应2π弧度。
 
-#### 5、简介颜色
+### 5、简介颜色
 
 屏幕上默认的模式是RGB565，而我们常用的都是ARGB8888（四通道高精度(32位)）和ARGB4444（四通道低精度(16位)），还有一种不常用的Alpha8（仅有透明通道(8位)）。
 
@@ -93,7 +91,7 @@ ARGB通道，其中RGB是红绿蓝，A是Alpha（通常用来作为此颜色的�
 
 ![5.gif](https://upload-images.jianshu.io/upload_images/6025530-249f6f4041e77b78.gif?imageMogr2/auto-orient/strip)
 
-#### 6、颜色混合模式
+### 6、颜色混合模式
 
 安卓着色器(tint)可以为图标着色，既可以在xml中，也可以在代码中设置，一共有16种颜色混合模式。
 
@@ -140,7 +138,7 @@ PorterDuff模式的混合计算公式：（D指原本在Canvas上的内容dst，
 - SRC_OVER：[Sa + (1 - Sa)Da, Rc = Sc + (1 - Sa)Dc]
 - XOR：[Sa + Da - 2 * Sa * Da, Sc * (1 - Da) + (1 - Sa) * Dc]
 
-#### 7、定义颜色
+### 7、定义颜色
 
 上面简单了解了一下颜色的相关内容，现在来介绍一下使用。
 
@@ -166,7 +164,7 @@ int color4=getResources().getColor(R.color.blue);//引用xml中定义的颜色
 </resources>
 ```
 
-#### 8、参考
+### 8、参考
 
 - [http://www.gcssloop.com/customview/CustomViewIndex/](http://www.gcssloop.com/customview/CustomViewIndex/)
 

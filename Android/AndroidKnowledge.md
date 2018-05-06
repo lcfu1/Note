@@ -1,6 +1,6 @@
-# Android
+## Android
 
-#### 知识点
+### 知识点
 
 - 布局，LinearLayout线性布局、RelativeLayout相对布局、FrameLayout帧布局、TableLayout表格布局、AbsoluteLayout绝对布局、GridLayout网格布局、ConstraintLayout、DrawerLayout侧滑菜单
 - TextView文本、EditText输入文本
