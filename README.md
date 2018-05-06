@@ -52,13 +52,13 @@ author：lcfu1
 ## Git
 
 - 笔记
-  - [Git命令总结](Git/git(1).md)
+  - [Git命令总结](Git/git1.md)
 
 ## SVG
 
 - 笔记
-  - [SVG(1)](SVG/SVG(1).md)
-  - [SVG(2)](SVG/SVG(2).md)
+  - [SVG(1)](SVG/SVG1.md)
+  - [SVG(2)](SVG/SVG2.md)
 
 ### Markdown
 
