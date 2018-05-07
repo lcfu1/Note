@@ -1,11 +1,5 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>二维码生成器</title>
-</head>
-<body>
 <div id="qrcode">
-	<div class="container">
+	<div class="qrcode_container">
 		<div class="qrcode_fl">
 			<textarea class="qrcode_qr" id="qrtext" placeholder="请输入内容"></textarea>
 			<div>
@@ -79,5 +73,3 @@ function downloadImage(src) {
 }
 
 </script>
-</body>
-</html>

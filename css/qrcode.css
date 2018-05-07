@@ -7,7 +7,7 @@
 .qrcode_fr{
 	float:right;
 }
-.container{
+.qrcode_container{
     width: 700px;
     margin:0 auto;
     margin-top: 50px;
