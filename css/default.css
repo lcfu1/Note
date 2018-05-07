@@ -26,21 +26,7 @@
     border: 1px solid rgba(27,31,35,0.05);
     border-radius: 0 0 3px 3px;
 }
-.fixed-btn {
-	position: fixed;
-	right: 2%;
-	bottom: 2%;
-	width: 40px;
-	/*border: 1px solid #eee;
-	background-color: white;*/
-	z-index: 1040;
-}
-.fixed-btn .go-top {
-    /*border-bottom: 1px solid #eee;*/
-}
-.fixed-btn .go-home {
-    /*solid #eee;*/
-}
+
 .test{
 	background: #f6f6f6;
 	padding-top: 1px;

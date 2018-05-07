@@ -1,0 +1,46 @@
+.body{
+	text-align:center
+} 
+.qrcode_fl{
+	float:left;
+}
+.qrcode_fr{
+	float:right;
+}
+.qrcode_container{
+    width: 700px;
+    margin:0 auto;
+    margin-top: 50px;
+}
+.qrcode_btn1 {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    padding: 0px 15px;
+    margin: 30px auto 10px;
+    background-color: #f2f6fa;
+}
+.qrcode_img {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid rgba(27,31,35,0.15);
+    border-radius: 3px;
+}
+
+.qrcode_qr{
+	display:block;
+	width: 340px;
+	height: 240px;
+	resize:none;
+	padding:5px;
+	border:1px solid rgba(27,31,35,0.15);
+	border-radius:3px;
+}
+.qrcode_img1{
+    display: block;
+    width: 200;
+    height: 200px;
+    margin: 30px auto;
+}
