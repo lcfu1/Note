@@ -5,7 +5,7 @@
 </head>
 <body>
 <div id="qrcode">
-	<div class="qrcode_container">
+	<div class="container">
 		<div class="qrcode_fl">
 			<textarea class="qrcode_qr" id="qrtext" placeholder="请输入内容"></textarea>
 			<div>
