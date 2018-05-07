@@ -47,22 +47,29 @@ author：lcfu1
 - **jQuery基础**
 
   - [下载和使用](jQuery/download-and-use.md)
+
   - [语法](jQuery/syntax.md)
+
   - [选择器](jQuery/selector.md)
+
   - [事件](jQuery/event.md)
 
 ## Git
 
 - 笔记
+
   - [Git命令总结](Git/git1.md)
 
 ## SVG
 
 - 笔记
+
   - [SVG(1)](SVG/SVG1.md)
+
   - [SVG(2)](SVG/SVG2.md)
 
 ### Markdown
 
 - 笔记
+
   - [基础语法](Markdown/markdown.md)
