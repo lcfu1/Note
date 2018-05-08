@@ -112,8 +112,15 @@ body {
 	<!--运行结果-->
 	<div class="col-sm-6">
 	<div class="panel panel-default"> 
-		<div class="panel-heading"><form class="form-inline"> <button type="button" class="btn btn-default">运行结果</button></form></div>
-		<div class="panel-body"><div id="iframewrapper"></div></div>
+		<div class="panel-heading">
+			<form class="form-inline">
+				<button type="button" class="btn btn-default">运行结果</button>
+				<a href="https://lcfu1.github.io/UseNote/editors/HCS.html" target="_blank"><button type="button" class="btn btn-default">放大</button></a>
+			</form>
+		</div>
+		<div class="panel-body">
+			<div id="iframewrapper"></div>
+		</div>
 	</div>
 	</div>
 	
