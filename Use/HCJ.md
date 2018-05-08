@@ -98,7 +98,7 @@ body {
 	&lt;head&gt;
 		&lt;meta charset=&quot;UTF-8&quot;&gt; 
 		&lt;title&gt;&lt;/title&gt; 
-		&lt;script src=&quot;../libs/jquery/jquery-3.3.1.min.js&quot;&gt;
+		&lt;script src=&quot;../js/jquery-3.3.1.min.js&quot;&gt;
 		&lt;/script&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
