@@ -70,7 +70,8 @@ body {
 	display: block
 }
 </style>
-<h3 class="title">HTML/CSS/JavaScript在线编辑器</h3>
+
+<a href="https://lcfu1.github.io/UseNote/editors/HCS.html" target="_blank"><h3 class="title">HTML/CSS/JavaScript在线编辑器</h3></a>
 
 <div class="container">
     <div class="row">
@@ -115,7 +116,6 @@ body {
 		<div class="panel-heading">
 			<form class="form-inline">
 				<button type="button" class="btn btn-default">运行结果</button>
-				<a href="https://lcfu1.github.io/UseNote/editors/HCS.html" target="_blank"><button type="button" class="btn btn-default">放大</button></a>
 			</form>
 		</div>
 		<div class="panel-body">

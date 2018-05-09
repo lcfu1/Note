@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/latest/styles/github.min.css">
 	
 <section class="main-content">
-  <h1>Markdown在线编辑器</h1>
+  <a href="https://lcfu1.github.io/UseNote/editors/Markdown.html" target="_blank"><h1>Markdown在线编辑器</h1></a>
   <textarea id="demo2" style="display: none;"># Welcome to use</textarea>
 </section>
 <script>
@@ -127,7 +127,7 @@
 		{
 			name: "guide",
 			action: function link(link){
-				window.open('https://lcfu1.github.io/UseNote/editors/markdown-guide.html','_blank')
+				window.open('/{{ site.title }}/Use/markdown-guide.html','_blank')
 			},
 			className: "fa fa-star",
 			title: "Markdown指南",
@@ -135,7 +135,7 @@
 		{
 			name: "custom",
 			action: function customFunction(editor){
-				window.open('https://lcfu1.github.io/UseNote/editors/markdown-help.html','_blank')
+				window.open('/{{ site.title }}/Use/markdown-help.html','_blank')
 			},
 			className: "fa fa-question-circle",
 			title: "帮助",
