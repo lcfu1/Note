@@ -71,7 +71,7 @@ body {
 }
 </style>
 
-<a href="https://lcfu1.github.io/UseNote/editors/HCS.html" target="_blank"><h3 class="title">HTML/CSS/JavaScript在线编辑器</h3></a>
+<a href="https://lcfu1.github.io/UseNote/editors/HCS.html" target="_blank"><h2>HTML/CSS/JavaScript在线编辑器</h2></a>
 
 <div class="container">
     <div class="row">

@@ -26,7 +26,7 @@
 
 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，广泛用来写博客。
 
-推荐编辑器：MarkdownPad、有道云笔记等
+推荐编辑器：Typora、MarkdownPad、有道云笔记等
 线上编辑器：简书(https://www.jianshu.com)、Md2All(http://md.aclickall.com/)等
 
 ### 1、标题

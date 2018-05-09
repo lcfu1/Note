@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/latest/styles/github.min.css">
 	
 <section class="main-content">
-  <a href="https://lcfu1.github.io/UseNote/editors/Markdown.html" target="_blank"><h1>Markdown在线编辑器</h1></a>
+  <a href="https://lcfu1.github.io/UseNote/editors/Markdown.html" target="_blank"><h2>Markdown在线编辑器</h2></a>
   <textarea id="demo2" style="display: none;"># Welcome to use</textarea>
 </section>
 <script>
@@ -127,7 +127,7 @@
 		{
 			name: "guide",
 			action: function link(link){
-				window.open('/{{ site.title }}/Use/markdown-guide.html','_blank')
+				window.open('/{{ site.title }}/Markdown/markdown.html','_blank')
 			},
 			className: "fa fa-star",
 			title: "Markdown指南",
