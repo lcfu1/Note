@@ -38,7 +38,7 @@
 		name: "italic",
 		action: SimpleMDE.togglefaItalic,
 		className: "fa fa-italic",
-		title: "斜体 (Ctrl+I)",
+		title: "斜体",
 		},
 		{
 		name: "strikethrough",

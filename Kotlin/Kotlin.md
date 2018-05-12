@@ -16,3 +16,10 @@ fun main(args:Array<String>){
 }
 ```
 
+### 链接
+
+- [Kotlin语言中文站](https://www.kotlincn.net/)
+- [Kotlin官网](http://kotlinlang.org/)
+- [Kotlin在线编辑](https://try.kotlinlang.org/)
+- [Kotlin视频学习](https://github.com/open-android/Android#kotlin视频学习)
+

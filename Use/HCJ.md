@@ -70,10 +70,11 @@ body {
 	display: block
 }
 </style>
-<div>
-<a href="https://lcfu1.github.io/UseNote/editors/HCS.html" target="_blank"><h2>HTML/CSS/JavaScript在线编辑器</h2></a>
-</div>
+
 <div class="container">
+	<div>
+		<a href="https://lcfu1.github.io/UseNote/editors/HCS.html" target="_blank"><h2>HTML/CSS/JavaScript在线编辑器</h2></a>
+	</div>
     <div class="row">
     
     <!--源代码编辑-->
