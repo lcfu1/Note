@@ -27,7 +27,6 @@
 	insertTexts: {
 		image: ["![](", ")"],
 		link: ["[", "]()"],
-		italic：["*", "*"],
 	},
 	toolbar: [{
 		name: "bold",
