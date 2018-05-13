@@ -30,6 +30,8 @@ author：lcfu1
   
   - [基础语法](Kotlin/BasicGrammar.md)
   
+  - [基本数据类型](Kotlin/PrimaryDataType.md)
+  
 ## Java
 
 - **java基础**
