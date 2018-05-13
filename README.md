@@ -57,12 +57,11 @@ author：lcfu1
 - **jQuery基础**
 
   - [下载和使用](jQuery/download-and-use.md)
-
   - [语法](jQuery/syntax.md)
-
   - [选择器](jQuery/selector.md)
-
   - [事件](jQuery/event.md)
+  - [隐藏和显示](jQuery/HideShow.md)
+  - [淡入淡出](jQuery/fade.md)
 
 ## Git
 
