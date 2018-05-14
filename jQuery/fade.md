@@ -1,5 +1,17 @@
 ## 淡入淡出
 
+> 要点：
+>
+> 1、fadeIn()
+>
+> 2、fadeOut()
+>
+> 3、fadeToggle()
+>
+> 4、fadeTo()
+>
+> 5、语法
+
 ### fadeIn()
 
 - 淡入已隐藏的元素。

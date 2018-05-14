@@ -62,6 +62,8 @@ author：lcfu1
   - [事件](jQuery/event.md)
   - [隐藏和显示](jQuery/HideShow.md)
   - [淡入淡出](jQuery/fade.md)
+  - [滑动](jQuery/slide.md)
+  - [动画](jQuery/animate.md)
 
 ## Git
 
