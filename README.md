@@ -7,17 +7,13 @@ author：lcfu1
 - **自定义View**
 
   - [Android自定义View（一）](Android/CustomView/CustomView1.md)
-  
   - [Android自定义View（二）](Android/CustomView/CustomView2.md)
-  
   - [Android自定义View（三）](Android/CustomView/CustomView3.md)
-  
   - [Android自定义View（四）](Android/CustomView/CustomView4.md)
-  
+- **AndroidStudio**
+  - [AndroidStudio](Android/AndroidStudio.md)
 - **Android知识点**
-
   - [Android知识点](Android/AndroidKnowledge.md)
-  
 - **Android面试题**
 
   - [面试题](Android/Interview/interview.md)
@@ -27,21 +23,16 @@ author：lcfu1
 - **kotlin基础**
 
   - [简介](Kotlin/Kotlin.md)
-  
   - [基础语法](Kotlin/BasicGrammar.md)
-  
   - [基本数据类型](Kotlin/PrimaryDataType.md)
-  
+
 ## Java
 
 - **java基础**
 
   - [编程风格](Java/CodingStyle.md)
-  
   - [类](Java/class.md)
-  
   - [URL](Java/URL.md)
-  
   - [InetAddress类](Java/InetAddress.md)
 
 ## JavaScript
@@ -49,7 +40,6 @@ author：lcfu1
 - **JavaScript基础**
 
   - [用法](JavaScript/use.md)
-  
   - [输出](JavaScript/output.md)
 
 ## jQuery
@@ -76,7 +66,6 @@ author：lcfu1
 - 笔记
 
   - [SVG(1)](SVG/SVG1.md)
-
   - [SVG(2)](SVG/SVG2.md)
 
 ## Markdown
