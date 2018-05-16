@@ -6,6 +6,7 @@
 
 - 可以使用 in 运算符来检测某个数字是否在指定区间内，区间格式为 x..y。
 
+如：
 
 ```
 fun main(args: Array<String>) {

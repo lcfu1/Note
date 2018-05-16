@@ -114,18 +114,20 @@ SVG的一些预定义形状元素 ，如：
 
 用`<path>` 标签来定义一个路径。 
 
-可用以下命令控制路径数据，允许大小写字母，大写表示绝对定位，小写表示相对定位。 
+可用以下命令控制路径数据，允许大小写字母，大写表示应用绝对位置，小写表示相对定位。
 
-- M = moveto
-- L = lineto
-- H = horizontal lineto
-- V = vertical lineto
-- C = curveto
-- S = smooth curveto
-- Q = quadratic Bézier curve
-- T = smooth quadratic Bézier curveto
-- A = elliptical Arc
-- Z = closepath
+| 命令                                | 描述                           |
+| :---------------------------------- | :----------------------------- |
+| M = moveto                          | 移动到                         |
+| L = lineto                          | 连线到                         |
+| H = horizontal lineto               | 水平连线到                     |
+| V = vertical lineto                 | 垂直连线到                     |
+| C = curveto                         | 使用曲线连接到                 |
+| S = smooth curveto                  | 使用平滑曲线连接到             |
+| Q = quadratic Bézier curve          | 使用二次贝塞尔曲线连接到       |
+| T = smooth quadratic Bézier curveto | 使用平滑的二次贝塞尔曲线连接到 |
+| A = elliptical Arc                  | 使用椭圆曲线连接到             |
+| Z = closepath                       | 将路径封闭到                   |
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
