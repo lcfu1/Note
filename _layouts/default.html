@@ -36,7 +36,7 @@
       			<a href="javascript:scroll(0,100000)"><svg style="float: right;" class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><polyline points="0,4 8,12 16,4" style="fill:none;stroke:black;stroke-width:1" /></svg></a>
       			<a href="https://{{ site.author }}.github.io/{{ site.title }}"><svg style="float: right;margin-right: 15px;" class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path stroke="#000" id="svg_2" d="m0.58548,8.04922l0,0c0,-4.12487 3.32988,-7.46874 7.43749,-7.46874l0,0c1.97255,0 3.8643,0.78688 5.2591,2.18754c1.3948,1.40066 2.17839,3.30036 2.17839,5.2812l0,0c0,4.12487 -3.32988,7.46874 -7.43749,7.46874l0,0c-4.10761,0 -7.43749,-3.34387 -7.43749,-7.46874zm3.71875,0l0,0c0,2.06244 1.66494,3.73437 3.71875,3.73437c2.05381,0 3.71875,-1.67194 3.71875,-3.73437c0,-2.06244 -1.66494,-3.73437 -3.71875,-3.73437l0,0c-2.05381,0 -3.71875,1.67194 -3.71875,3.73437z" fill-opacity="null" stroke-opacity="null" fill="#fff"/></svg></a>
 				<a href="https://github.com/{{ site.author }}/{{ site.title }}/blob/master/{{ page.path }}" target="_blank"><svg style="float: right;margin-right: 15px;" class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path id="svg_2" d="m6.06249,8.9375l-1,0l0,-1l1,0l0,1zm0,-3l-1,0l0,1l1,0l0,-1zm0,-2l-1,0l0,1l1,0l0,-1zm0,-2l-1,0l0,1l1,0l0,-1zm8,-1l0,12c0,0.55 -0.45,1 -1,1l-5,0l0,2l-1.5,-1.5l-1.5,1.5l0,-2l-2,0c-0.55,0 -1,-0.45 -1,-1l0,-12c0,-0.55 0.45,-1 1,-1l10,0c0.55,0 1,0.45 1,1zm-1,10l-10,0l0,2l2,0l0,-1l3,0l0,1l5,0l0,-2zm0,-10l-9,0l0,9l9,0l0,-9z" fill-rule="evenodd"/></svg></a>
-				<a><svg id="btn" style="float: right;margin-right: 15px;" class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path stroke="#000" id="svg_2" d="m8.01141,2.68102c-4.17471,0 -7.46868,5.3746 -7.46868,5.3746s3.29396,5.37529 7.46868,5.37529c3.19272,0 7.46868,-5.37529 7.46868,-5.37529s-4.27596,-5.3746 -7.46868,-5.3746zm0,8.72379c-1.46552,0 -2.6594,-1.50285 -2.6594,-3.3492s1.19388,-3.3492 2.6594,-3.3492s2.6594,1.50355 2.6594,3.3492s-1.19388,3.3492 -2.6594,3.3492zm0,-5.30423c-0.85696,0 -1.55238,0.8751 -1.55238,1.95503c0,1.07994 0.69486,1.95503 1.55238,1.95503c0.85751,0 1.55238,-0.8751 1.55238,-1.95503c0,-1.07924 -0.69486,-1.95503 -1.55238,-1.95503z" fill-opacity="null" stroke-opacity="null" fill="#fff"/></svg></a>
+				<svg id="btn" style="float: right;margin-right: 15px;" class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path stroke="#000" id="svg_2" d="m8.01141,2.68102c-4.17471,0 -7.46868,5.3746 -7.46868,5.3746s3.29396,5.37529 7.46868,5.37529c3.19272,0 7.46868,-5.37529 7.46868,-5.37529s-4.27596,-5.3746 -7.46868,-5.3746zm0,8.72379c-1.46552,0 -2.6594,-1.50285 -2.6594,-3.3492s1.19388,-3.3492 2.6594,-3.3492s2.6594,1.50355 2.6594,3.3492s-1.19388,3.3492 -2.6594,3.3492zm0,-5.30423c-0.85696,0 -1.55238,0.8751 -1.55238,1.95503c0,1.07994 0.69486,1.95503 1.55238,1.95503c0.85751,0 1.55238,-0.8751 1.55238,-1.95503c0,-1.07924 -0.69486,-1.95503 -1.55238,-1.95503z" fill-opacity="null" stroke-opacity="null" fill="#fff"/></svg>
 			</div>
 			<div class="readme_body">	
 				{{ content }}
@@ -117,8 +117,10 @@
 			$("#btn").click(function(){
 				if(i%2==0){
 					$("body").css("background-color","#c7edcc");
+					i=1;
 				}else{
 					$("body").css("background-color","#fff");
+					i=0;
 				}
 			});
 		});
