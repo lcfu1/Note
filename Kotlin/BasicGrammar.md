@@ -160,7 +160,7 @@ fun main(args: Array<String>) {
 
 ### 类型检测及自动类型转换
 
-使用 is 运算符检测一个表达式是否某类型的一个实例(类似于Java中的instanceof关键字) 。
+使用 is 运算符检测一个表达式是否是某类型的一个实例(类似于Java中的instanceof关键字) 。
 
 ```
 fun getStringLength(obj: Any): Int? {

@@ -1,3 +1,7 @@
+<!-- 用于二维码 -->
+<link rel="stylesheet" type="text/css" href="/{{ site.title }}/css/qrcode.css">
+<script type="text/javascript" src="/{{ site.title }}/js/awesome-qr.js"></script>
+
 <div id="qrcode">
 	<div class="qrcode_container">
 		<div class="qrcode_fl">
