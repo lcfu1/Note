@@ -2,7 +2,7 @@
 
 Android系统架构图：
 
-![Android系统架构图](https://raw.githubusercontent.com/lcfu1/Image/master/Android%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![Android系统架构图](https://raw.githubusercontent.com/lcfu1/Image/master/Android/Android%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 - 可以分为应用层、应用框架层、系统运行库层、硬件抽象层和Linux内核层。
 

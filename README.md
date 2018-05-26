@@ -24,6 +24,12 @@ author：lcfu1
 
   - [面试题](Android/Interview/interview.md)
 
+## Groovy
+
+- Groovy知识
+
+  - [Groovy入门](Groovy/Groovy.md)
+  
 ## Kotlin
 
 - kotlin基础
