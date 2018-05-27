@@ -1,6 +1,8 @@
-Description：Note
+Description：我的个人笔记
 
 author：lcfu1
+
+Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
 ## Android
 
@@ -92,7 +94,7 @@ author：lcfu1
 
 ## UseNote
 
-- 开源项目
+- 开源项目的使用
 
   - [SimpleTheme](Use/SimpleThemeDescription.md)
   - [shields](Use/shieldsDescription.md)
