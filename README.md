@@ -21,6 +21,8 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
   - [Android知识点](Android/AndroidKnowledge.md)
   - [WebView](Android/Internet/WebView.md)
+  - [HttpURLConnection](Android/Internet/HttpURLConnection.md)
+  - [OkHttp](Android/Internet/OkHttp.md)
 
 - Android面试题
 

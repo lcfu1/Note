@@ -6,9 +6,9 @@
 
 使用WebView控件，我们可以在自己的应用里嵌入一个浏览器，用来浏览网页。
 
-### 简单的使用例子
+## 简单的使用例子
 
-*activity_main.xml*
+**activity_main.xml**
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -27,7 +27,7 @@
 
 在这里使用了WebView控件，并设置它的id为web_view。
 
-*MainActivity.java*
+**WebViewActivity.java**
 
 ```
 import android.support.v7.app.AppCompatActivity;
