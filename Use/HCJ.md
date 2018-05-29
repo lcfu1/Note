@@ -14,9 +14,7 @@ body {
 	background: #ffffff;
 }
 .container {
-	width: 98%;
-	padding-right: 15px;
-	padding-left: 15px;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto
 }
@@ -79,10 +77,10 @@ body {
     
     <!--源代码编辑-->
     <div class="col-sm-6">
-	<div class="panel panel-default"> 
-		<div class="panel-heading">
-			<form class="form-inline">
-				<div class="row">
+    <div class="panel panel-default"> 
+    	<div class="panel-heading">
+    		<form class="form-inline">
+    			<div class="row">
           			<div class="col-xs-6">
                			<button type="button" class="btn btn-default">源代码：</button>
             		</div>
@@ -90,11 +88,11 @@ body {
               			<button type="button" class="btn btn-success" onclick="submitTryit()" id="submitBTN"><span class="glyphicon glyphicon-send"></span> 提交代码 </button>
           			</div>
       			</div>
-			</form>
-		</div>
-		
-		<div class="panel-body">
-			<textarea class="form-control"  id="textareaCode" name="textareaCode">
+    		</form>
+    	</div>
+    	
+    	<div class="panel-body">
+    		<textarea class="form-control"  id="textareaCode" name="textareaCode">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 	&lt;head&gt;
@@ -170,7 +168,7 @@ function submitTryit() {
   var patternHead = /<head[^>]*>((.|[\n\r])*)<\/head>/im
   var array_matches_head = patternHead.exec(text);
   var patternBody = /<body[^>]*>((.|[\n\r])*)<\/body>/im;
-  
+
   var array_matches_body = patternBody.exec(text);
   var basepath_flag = 1;
   var basepath = '';
@@ -191,7 +189,7 @@ function submitTryit() {
   ifr.setAttribute("id", "iframeResult");  
   document.getElementById("iframewrapper").innerHTML = "";
   document.getElementById("iframewrapper").appendChild(ifr);
- 
+
   var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
   ifrw.document.open();
   ifrw.document.write(text);  
