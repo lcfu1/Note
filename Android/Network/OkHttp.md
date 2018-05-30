@@ -93,11 +93,12 @@ public class OkHttpActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try{
-                    URL url=new URL("http://www.baidu.com");
+                    URL url=new URL("https://raw.githubusercontent.com/lcfu1/test/master/get_html.html");
                     OkHttpClient client=new OkHttpClient();
                     Request request=new Request.Builder().url(url).build();
                     Response response=client.newCall(request).execute();
                     String responseData=response.body().string();
+                    LogUtil.d("OkHttpActivity----------",responseData);
                     showResponse(responseData);
                 }catch (Exception e){
                     e.printStackTrace();

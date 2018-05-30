@@ -16,13 +16,14 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 - AndroidStudio
 
   - [AndroidStudio](Android/AndroidStudio.md)
-
-- Android知识点
-
   - [Android知识点](Android/AndroidKnowledge.md)
-  - [WebView](Android/Internet/WebView.md)
-  - [HttpURLConnection](Android/Internet/HttpURLConnection.md)
-  - [OkHttp](Android/Internet/OkHttp.md)
+
+- Network
+
+  - [WebView](Android/Network/WebView.md)
+  - [HttpURLConnection](Android/Network/HttpURLConnection.md)
+  - [OkHttp](Android/Network/OkHttp.md)
+  - [XML](Android/Network/XML.md)
 
 - Android面试题
 

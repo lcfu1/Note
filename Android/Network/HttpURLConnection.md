@@ -98,7 +98,7 @@ public class HttpURLConnectionActivity extends AppCompatActivity {
                 HttpURLConnection connection=null;
                 BufferedReader reader=null;
                 try{
-                    URL url=new URL("http://www.baidu.com");
+                    URL url=new URL("https://raw.githubusercontent.com/lcfu1/test/master/get_html.html");
                     connection=(HttpURLConnection)url.openConnection();
                     connection.setRequestMethod("GET");
                     connection.setConnectTimeout(8000);
@@ -109,6 +109,7 @@ public class HttpURLConnectionActivity extends AppCompatActivity {
                     while(reader.readLine()!=null){
                         response.append(reader.readLine());
                     }
+                    LogUtil.d("HttpURLConnectionActivity----------",response.toString());
                     showResponse(response.toString());
                 }catch (Exception e){
                     e.printStackTrace();
