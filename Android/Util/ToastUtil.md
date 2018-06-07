@@ -4,9 +4,7 @@
 
 - [ToastUtil](#toastutil)
 
-这是一个Toast公共类。
-
-即使触发多次，也只会持续一个Toast显示的时间，如果是在触发Toast还没结束的情况下继续触发其他的Toast，则只会修改当前显示的Toast的内容。
+## ToastUtil
 
 ToastUtil.java
 
@@ -28,3 +26,6 @@ public class ToastUtil {
     }
 }
 ```
+这是一个Toast公共类。
+
+即使触发多次，也只会持续一个Toast显示的时间，如果是在触发Toast还没结束的情况下继续触发其他的Toast，则只会修改当前显示的Toast的内容。
