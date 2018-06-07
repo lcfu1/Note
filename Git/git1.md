@@ -1,12 +1,12 @@
 # Git命令总结
 
->要点：
->
->1、命令总结
->
->2、参考
+目录：
 
-### 1、命令总结
+- [命令总结](#命令总结)
+- [参考](#参考)
+
+
+## 命令总结
 
 >$ git config --global user.name "Your Name"
 >- 设置全局用户名。
@@ -200,7 +200,7 @@
 >$ git push master:one
 >- 删除远程仓库的one分支。
 
-### 2、参考
+## 参考
 
 - [版本控制工具Git的使用](https://lcfu1.github.io/git/2018/03/05/git_001.html)
 

@@ -7,11 +7,11 @@
 - [简单例子 ](#简单例子)
 - [包](#包)
 - [基本数据类型](#基本数据类型)
-- [assert方法和Groovy真值](#assert方法和Groovy真值)
+- [assert方法和Groovy真值](#assert方法和groovy真值)
 - [操作符重载](#操作符重载)
 - [集合](#集合)
-- [POGOs](#POGOs)
-- [Gradle构建文件中的Groovy](#Gradle构建文件中的Groovy)
+- [POGOs](#pogos)
+- [Gradle构建文件中的Groovy](#gradle构建文件中的groovy)
 
 ## 简介
 

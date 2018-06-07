@@ -1,18 +1,14 @@
-## 淡入淡出
+# 淡入淡出
 
-> 要点：
->
-> 1、fadeIn()
->
-> 2、fadeOut()
->
-> 3、fadeToggle()
->
-> 4、fadeTo()
->
-> 5、语法
+目录：
 
-### fadeIn()
+- [fadeIn()](#fadeIn())
+- [fadeOut()](#fadeOut())
+- [fadeToggle()](#fadeToggle())
+- [fadeTo()](fadeTo())
+- [语法](#语法)
+
+## fadeIn()
 
 - 淡入已隐藏的元素。
 
@@ -33,7 +29,7 @@ $(document).ready(function(){
 <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
 ```
 
-### fadeOut()
+## fadeOut()
 
 - 淡出可见元素。 
 
@@ -54,7 +50,7 @@ $(document).ready(function(){
 <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
 ```
 
-### fadeToggle()
+## fadeToggle()
 
 - 可以在 fadeIn() 与 fadeOut() 方法之间进行切换。
 
@@ -75,7 +71,7 @@ $(document).ready(function(){
 <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
 ```
 
-###  fadeTo()
+##  fadeTo()
 
 - 允许渐变为给定的不透明度（值介于 0 与 1 之间）。
 
@@ -96,7 +92,7 @@ $(document).ready(function(){
 <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
 ```
 
-### 语法
+## 语法
 
 ```
 $(selector).fadeIn(speed,callback);

@@ -1,12 +1,17 @@
-## 下载和使用
+# 下载和使用
 
-### jQuery简介
+目录：
+
+- [jQuery简介](#jquery简介)
+- [在网页中添加jQuery的方法](#在网页中添加jquery的方法)
+
+## jQuery简介
 
 - 是一个JavaScript函数库。
 
 - 是目前最流行的 JS 框架。
 
-### 在网页中添加jQuery的方法：
+## 在网页中添加jQuery的方法
 
 - 从 [jquery.com](http://jquery.com/download/) 下载 jQuery 库。
 

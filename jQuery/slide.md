@@ -1,16 +1,13 @@
-## 滑动
+# 滑动
 
-> 要点：
->
-> 1、slideDown()
->
-> 2、slideUp()
->
-> 3、slideToggle()
->
-> 4、语法
+目录：
 
-### slideDown()
+- [slideDown()](#slidedown)
+- [slideUp()](#slideup)
+- [slideToggle()](#slidetoggle)
+- [语法](#语法)
+
+## slideDown()
 
 - 向下滑动元素。
 
@@ -26,7 +23,7 @@ $(document).ready(function(){
 <p id="p" style="display:none;">Hello!</p>
 ```
 
-### slideUp()
+## slideUp()
 
 - 向上滑动元素 。
 
@@ -42,7 +39,7 @@ $(document).ready(function(){
 <p id="p">Hello!</p>
 ```
 
-### slideToggle() 
+## slideToggle() 
 
 - 可以在 slideDown() 与 slideUp() 方法之间进行切换。
 
@@ -58,7 +55,7 @@ $(document).ready(function(){
 <p id="p">Hello!</p>
 ```
 
-### 语法
+## 语法
 
 ```
 $(selector).slideDown(speed,callback);

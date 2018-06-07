@@ -1,30 +1,26 @@
-## 隐藏和显示
+# 隐藏和显示
 
-> 要点：
->
-> 1、hide()
->
-> 2、show()
->
-> 3、toggle()
->
-> 4、语法
->
-> 5、例子
+目录：
 
-### hide()
+- [hide()](#hide)
+- [show()](#show)
+- [toggle()](#toggle)
+- [语法](#语法)
+- [例子](#例子)
+
+## hide()
 
 - 使用 hide() 方法来隐藏HTML 元素。
 
-### show()
+## show()
 
 - 使用 show() 方法来显示HTML 元素。
 
-### toggle()
+## toggle()
 
 使用 toggle() 方法来切换 hide() 和 show() 方法。
 
-### 语法
+## 语法
 
 ```
 $(selector).hide(speed,callback);
@@ -32,7 +28,7 @@ $(selector).show(speed,callback);
 $(selector).toggle(speed,callback);
 ```
 
-### 例子
+## 例子
 
 ```
 <script>

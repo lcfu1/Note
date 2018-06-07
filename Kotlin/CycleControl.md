@@ -1,6 +1,13 @@
-## 循环控制
+# 循环控制
 
-### for循环
+目录：
+
+- [for循环](#for循环)
+- [while循环](#while循环)
+- [do...while循环](#do...while循环)
+- [返回和跳转](#返回和跳转)
+
+## for循环
 
 ```
 fun main(args: Array<String>) {
@@ -19,7 +26,7 @@ fun main(args: Array<String>) {
 - 循环体可以是一个代码块。
 - 可以通过索引遍历一个数组或者一个 list。
 
-### while循环
+## while循环
 
 ```
 fun main(args: Array<String>) {
@@ -33,7 +40,7 @@ fun main(args: Array<String>) {
 
 - 满足条件就进入循环。
 
-### do...while循环
+## do...while循环
 
 ```
 fun main(args: Array<String>) {
@@ -47,7 +54,7 @@ fun main(args: Array<String>) {
 
 - 至少会执行一次。
 
-### 返回和跳转
+## 返回和跳转
 
 Kotlin 有三种结构化跳转表达式：
 

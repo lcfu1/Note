@@ -1,8 +1,15 @@
-## jQuery 语法
+# jQuery 语法
+
+目录：
+
+- [基础语法](#基础语法)
+- [jQuery函数](#jquery函数)
 
 通过选取 HTML 元素，并对选取的元素执行某些操作。
 
-### 基础语法：$(selector).action()
+## 基础语法
+
+$(selector).action()
 
 - 用美元符号来定义jQuery。
 
@@ -10,7 +17,7 @@
 
 - jQuery 的action()执行对元素的操作。
 
-### jQuery 函数
+## jQuery函数
 
 - 位于document ready 函数中。
 

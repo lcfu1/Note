@@ -1,6 +1,11 @@
-## jQuery 事件
+# jQuery 事件
 
-### jQuery中的事件有：
+目录：
+
+- [jQuery中的事件](#jquery中的事件)
+- [jQuery事件方法](#jquery事件方法)
+
+## jQuery中的事件
 
 - 点击元素。
 
@@ -8,7 +13,7 @@
 
 - 选取单选按钮。
 
-### jQuery 事件方法
+## jQuery事件方法
 
 - **click()**
 

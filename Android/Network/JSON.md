@@ -15,7 +15,7 @@
 
 测试数据我放在github上的。
 
-地址：[https://raw.githubusercontent.com/lcfu1/test/master/json_data.json](https://raw.githubusercontent.com/lcfu1/test/master/json_data.json)
+数据地址：[https://raw.githubusercontent.com/lcfu1/test/master/json_data.json](https://raw.githubusercontent.com/lcfu1/test/master/json_data.json)
 
 内容：
 

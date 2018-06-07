@@ -1,14 +1,12 @@
-## 动画
+# 动画
 
-> 要点：
->
-> 1、animate()
->
-> 2、stop()
->
-> 3、语法
+目录：
 
-### animate()
+- [animate()](#animate)
+- [stop()](#stop)
+- [语法](#语法)
+
+## animate()
 
 - 创建自定义动画。 
 
@@ -35,7 +33,7 @@ Hello
 - 可以把属性的动画值设置为 "show"、"hide" 或 "toggle" 。
 - 编写多个 animate() 调用，jQuery 会创建包含这些方法调用的"内部"队列。然后逐一运行这些 animate 调用。 
 
-### stop()
+## stop()
 
 - 用于停止动画或效果，在它们完成之前。
 - 适用于所有 jQuery 效果函数，包括滑动、淡入淡出和自定义动画。 
@@ -58,7 +56,7 @@ Hello
 </div>
 ```
 
-### 语法
+## 语法
 
 ```
 $(selector).animate({params},speed,callback);
