@@ -1,4 +1,4 @@
-## Activity如何与Service通信？
+# Activity如何与Service通信？
 
 **主要有以下5种：**
 

@@ -75,7 +75,7 @@ public class HttpURLConnectionUtil {
 
 解析：
 
-- 关于HttpURLConnection的知识请看[HttpURLConnection](Network/HttpURLConnection.md)。
+- 关于HttpURLConnection的知识请看[HttpURLConnection](https://lcfu1.github.io/Note/Android/Network/HttpURLConnection.html)。
 
 ## 使用
 

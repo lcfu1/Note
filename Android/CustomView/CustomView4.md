@@ -1,12 +1,11 @@
-## Android自定义View（四）
+# Android自定义View（四）
 
->要点：
->
->1、绘制图片
->
->2、参考
+目录：
 
-### 1、绘制图片
+- [绘制图片](#绘制图片)
+- [参考](#参考)
+
+## 绘制图片
 
 #### drawPicture(矢量图)
 
@@ -252,7 +251,7 @@ inputStream.close();
 
 注：从内存卡或网络上获取的方法我还没实现，有待解决！！
 
-### 2、参考
+## 参考
 
 - http://www.gcssloop.com/customview/CustomViewIndex/
 

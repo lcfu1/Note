@@ -1,18 +1,14 @@
 ## Android自定义View（三）
 
->要点：
->
->1、自定义View的分类
->
->2、自定义View需要注意的事项
->
->3、继承View重写onDraw方法
->
->4、实现一个简单的ImageView
->
->5、参考
+目录：
 
-### 1、自定义View的分类
+- [自定义View的分类](#自定义view的分类)
+- [自定义View需要注意的事项](#自定义view需要注意的事项)
+- [继承View重写onDraw方法](#继承view重写ondraw方法)
+- [实现一个简单的ImageView](#实现一个简单的imageview)
+- [参考](#参考)
+
+## 自定义View的分类
 
 自定义View的分类标准不是唯一的，有些人分为两类：自定义View和自定义ViewGroup，而这里分为4类，如下：
 
@@ -24,7 +20,7 @@
 
 （4）继承特定的ViewGroup（如LinearLayout）：不需要自己处理ViewGroup的测量和布局这两个过程。
 
-### 2、自定义View需要注意的事项
+## 自定义View需要注意的事项
 
 （1）让View支持wrap_content：直接继承View或ViewGroup的控件如果不在onMeasure中对wrap_content做特殊处理，那么在布局中设置wrap_content并不会达到预期的效果。
 
@@ -36,7 +32,7 @@
 
 （5）处理好View中的滑动冲突：当View带有滑动嵌套时，就要合适地处理滑动冲突，否则会影响View的效果。
 
-### 3、继承View重写onDraw方法
+## 继承View重写onDraw方法
 
 举个简单的例子，如下：
 
@@ -286,7 +282,7 @@ public class CircleView extends View{
 
 如上面的代码 ，AT_MOST对应LayoutParams中的wrap_content，如布局中layout_width使用了wrap_content，就指定一个wrap_content模式的默认宽给它，如400px。这里是px而不是dp。dp（英文density-independent-pixel的缩写，意为密度无关像素），在不同的像素密度的设备上会自动适配。上面的效果截图是正方形的，可能设备刚好是1dp = 2px的，在其它手机上测试就不一定是正方形了，这点是需要注意的。
 
-### 4、实现一个简单的ImageView
+## 实现一个简单的ImageView
 
 *ImageView.java代码如下：*
 
@@ -452,8 +448,8 @@ attr.xml中的ImageView属性集里面有一个src的整型属性，通过这个
 
 ![无标题.png](https://upload-images.jianshu.io/upload_images/6025530-240815fd2d1e603b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 5、参考
+## 参考
 
--《Android开发艺术探索》--任玉刚
--《Android开发进阶从小工到专家》--何红辉
+- 《Android开发艺术探索》--任玉刚
+- 《Android开发进阶从小工到专家》--何红辉
 

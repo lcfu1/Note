@@ -1,6 +1,11 @@
-## 编程风格
+# 编程风格
 
-### Allmans风格
+目录：
+
+- [Allmans风格](#allmans风格)
+- [Kernighan风格](#kernighan风格)
+
+## Allmans风格
 
 “独行”风格，左右大括号各占一行。
 
@@ -16,7 +21,7 @@ public class Allmans
 }
 ```
 
-### Kernighan风格
+## Kernighan风格
 
 “行尾”风格，左大括号在上一行的行尾，而右大括号独占一行。
 

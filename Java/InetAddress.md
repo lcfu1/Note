@@ -1,4 +1,4 @@
-## InetAddress类
+# InetAddress类
 
 在Internet上的主机有两种方式表示地址，如：
 

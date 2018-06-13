@@ -1,18 +1,14 @@
-## Android自定义View（二）
+# Android自定义View（二）
 
->要点：
->
->1、自定义View绘制流程
->
->2、绘制随手移动的小球
->
->3、Canvas
->
->4、Paint
->
->5、参考
+目录：
 
-### 1、自定义View绘制流程
+- [自定义View绘制流程](#自定义view绘制流程)
+- [绘制随手移动的小球](#绘制随手移动的小球)
+- [Canvas](#canvas)
+- [Paint](#paint)
+- [参考](#参考)
+
+## 自定义View绘制流程
 
 ![image](http://upload-images.jianshu.io/upload_images/6025530-da79ee12c89dbad3..jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -107,7 +103,7 @@ public void onDraw(Canvas canvas)
 
 就是实际绘制内容。
 
-### 2、绘制随手移动的小球
+## 绘制随手移动的小球
 
 ```
 package com.lcfu1.view;
@@ -167,7 +163,7 @@ public class DrawView extends View
 
 在现实中要画东西就需要画纸，而要在屏幕上面画东西，则需要[Canvas](https://developer.android.google.cn/reference/android/graphics/Canvas.html)，也就是画布。
 
-### 3、Canvas
+## Canvas
 
 常用方法如下：
 
@@ -340,7 +336,7 @@ canvas.drawRect(0,0,100,100,mPaint);//画距形
 
 ![image.png](https://upload-images.jianshu.io/upload_images/6025530-d342d6f661880810.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 4、Paint
+## Paint
 
 上面简述了Canvas的使用，要想在Canvas上画东西，肯定不能少了Paint，也就是画笔。
 
@@ -367,7 +363,7 @@ paint.setStrokeCap(Paint.Cap.ROUND);
 paint.setStrokeJoin(Paint.Join.ROUND);
 ```
 
-### 5、参考
+## 参考
 
 - [http://www.gcssloop.com/customview/Canvas_BasicGraphics](http://www.gcssloop.com/customview/Canvas_BasicGraphics)
 - [https://developer.android.google.cn/reference/android/graphics/Canvas.html](https://developer.android.google.cn/reference/android/graphics/Canvas.html)
