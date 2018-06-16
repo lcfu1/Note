@@ -3,7 +3,7 @@
 目录：
 
 - [介绍](#介绍)
-- [使用](#使用)
+- [简单使用](#使用)
 - [更多查询操作](#更多查询操作)
 
 ## 介绍
@@ -11,7 +11,7 @@
 1. 开源的Android数据库框架，采用了对象关系映射(ORM)的模式。
 2. github地址：[https://github.com/LitePalFramework/LitePal](https://github.com/LitePalFramework/LitePal)。
 
-## 使用
+## 简单使用
 
 1. 添加以下依赖：
 
@@ -206,3 +206,4 @@
 
 ## 更多查询操作
 
+待续...
