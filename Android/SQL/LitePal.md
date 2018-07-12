@@ -10,6 +10,7 @@
 
 1. 开源的Android数据库框架，采用了对象关系映射(ORM)的模式。
 2. github地址：[https://github.com/LitePalFramework/LitePal](https://github.com/LitePalFramework/LitePal)。
+3. 当前使用的是LitePal 2.0.0版本。
 
 ## 简单使用
 

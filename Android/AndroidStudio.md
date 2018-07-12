@@ -1,18 +1,18 @@
-## Android Studio
+# Android Studio
 
-> 要点：
->
-> 1、优势
->
-> 2、下载安装
->
-> 3、离线配置Gradle
->
-> 4、第一个Android程序：项目结构、目录讲解
->
-> 5、实用技巧：（1）代码管理、（2）代码编辑技巧、（3）快捷键、（4）调试技巧
+目录：
 
-### 优势
+- [优势](#优势)
+- [下载安装](#下载安装)
+- [离线配置Gradle](#离线配置gradle)
+- [第一个Android程序](#第一个android程序)
+- [实用技巧](#实用技巧)
+  - [代码管理](#代码管理)
+  - [代码编辑技巧](#代码编辑技巧)
+  - [快捷键](#快捷键)
+  - [调试技巧](#调试技巧)
+
+## 优势
 
 1. 由Google公司开发并大力完善和支持。
 2. 稳定速度快：启动速度快，与其他IDE（集成开发环境Integrated Development Environment）相比，性能明显提升了。
@@ -23,14 +23,14 @@
 7. 内置终端：不需要自己打开一个终端来使用ADB等工具，当然也可以使用[Genymotion安卓模拟器](https://www.genymotion.com/)。
 8. 智能化：智能保存、补齐等，提高开发效率。
 
-### 下载安装
+## 下载安装
 
 1. 可到[Android Studio中文社区](http://www.android-studio.org/)或[https://developer.android.google.cn/studio/](https://developer.android.google.cn/studio/)进行下载。
 2. 最好下载的Android Studio包含构建 Android 应用所需的所有工具。
 3. 如果电脑上已安装了JDK，则安装Android Studio时只需安装默认的选项。
 4. 如果电脑上有SDK，可选择本地的SDK目录。
 
-### 离线配置Gradle
+## 离线配置Gradle
 
 1. Android Studio没有自带Gradle插件，但会自动下载Gradle。
 2. [下载Gradle](http://gradle.android-studio.org/)。
@@ -39,7 +39,7 @@
 
 **注：Gradle是一种依赖管理工具，基于Groovy语言，抛弃了基于XML的各种繁琐配置，取而代之的是一种基于Groovy的内部领域特定语言（DSL），掌握Gradle脚本的编译和打包是应用开发非常必要的。**
 
-### 第一个Android程序
+## 第一个Android程序
 
 **项目的结构模式：**
 
@@ -85,9 +85,9 @@
 10. build.gradle：app模块的gradle构建脚本。
 11. proguard-rules.pro：指定项目的混淆规则，将代码进行混淆以防别人破解。
 
-### 实用技巧
+## 实用技巧
 
-#### （1）代码管理
+### 代码管理
 
 1. 在电脑上安装Git，[windows下载地址](https://gitforwindows.org/)。
 
@@ -119,7 +119,7 @@
 
    ![VCS Commit](https://github.com/lcfu1/Image/blob/master/Android/VCS%20Commit.PNG?raw=true)
 
-#### （2）代码编辑技巧
+### 代码编辑技巧
 
 1. 可通过File->Settings->Keymap来设置快捷键，如下图：
 
@@ -145,7 +145,7 @@
 
    ![Tip of the day](https://github.com/lcfu1/Image/blob/master/Android/Tip%20of%20the%20day.PNG?raw=true)
 
-#### （3）快捷键
+### 快捷键
 
 | 快捷键                | 作用                   |
 | --------------------- | ---------------------- |
@@ -167,7 +167,7 @@
 | Ctrl+Shift+I          | 预览某个方法或类的实现 |
 | Ctrl+Shift+A          | 快速使用命令           |
 
-#### （4）调试技巧
+### 调试技巧
 
 1. 调试程序：通过菜单->Build->Attach to Android Process，也可以通过工具栏快捷键工具Attach to Android Process进入调试模式。
 2. 条件断点：通过右键断点对一个断点加入条件，即填写Condition中的条件，只有满足条件时，才会进入断点。
