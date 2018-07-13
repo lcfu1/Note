@@ -36,6 +36,14 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
   - [LitePal](Android/SQL/LitePal.md)
 
+- Theme
+
+  - [动态修改主题](Android/Theme/setTheme.md)
+
+- Model
+  
+  - [MVP](Android/Model/MVP.md)
+
 - Android面试题
 
   - [面试题](Android/Interview/interview.md)
