@@ -40,9 +40,13 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
   - [动态修改主题](Android/Theme/setTheme.md)
 
-- Model
+- architecture
   
-  - [MVP](Android/Model/MVP.md)
+  - [MVP](Android/Architecture/MVP.md)
+  
+- Glide
+  
+  - [Glide用法](Android/Glide/Glide.md)
 
 - Android面试题
 
