@@ -2,7 +2,29 @@
 
 目录：
 
-- 
+- [简介](#简介)
+- [开始](#开始)
+- [权限](#权限)
+  - [从应用中加载图片](从应用中加载图片)
+  - [从Internet上加载图片](#从internet上加载图片)
+  - [从本地存储中加载图片](#从本地存储中加载图片)
+- [简单的例子](#简单的例子)
+- [占位图](#占位图)
+  - [加载占位图](#加载占位图)
+  - [异常占位图](#异常占位图)
+- [加载格式](#加载格式)
+  - [指定加载静态图片](#指定加载静态图片)
+  - [指定加载动态图片](#指定加载动态图片)
+- [指定图片大小](#指定图片大小)
+- [缓存机制](#缓存机制)
+  - [内存缓存](#内存缓存)
+  - [硬盘缓存](#硬盘缓存)
+- [回调与监听](#回调与监听)
+  - [into()](#into)
+  - [submit()](#submit)
+  - [listener()](#listener)
+  - [preload()](#preload)
+- [参考](#参考)
 
 ## 简介
 
@@ -112,7 +134,9 @@ public class GlideActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         if(v.getId()==R.id.load_btn){
             String url="https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
-            Glide.with(this).load(url).into(mImageView);
+            Glide.with(this)
+            	 .load(url)
+            	 .into(mImageView);
         }
     }
 }
@@ -135,7 +159,10 @@ String url="https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_l
 RequestOptions options=new RequestOptions()
 	.placeholder(R.drawable.loading)
 	.diskCacheStrategy(DiskCacheStrategy.NONE);
-Glide.with(this).load(url).apply(options).into(mImageView);
+Glide.with(this)
+	 .load(url)
+	 .apply(options)
+	 .into(mImageView);
 ```
 
 注：
@@ -157,7 +184,10 @@ RequestOptions options=new RequestOptions()
 	.error(R.drawable.error)
 	.placeholder(R.drawable.loading)
 	.diskCacheStrategy(DiskCacheStrategy.NONE);
-Glide.with(this).load(url).apply(options).into(mImageView);
+Glide.with(this)
+	 .load(url)
+	 .apply(options)
+	 .into(mImageView);
 ```
 
 注：
@@ -167,6 +197,43 @@ Glide.with(this).load(url).apply(options).into(mImageView);
 把网络关掉，测试效果如下：
 
 ![glide_3](https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_3.gif)
+
+## 加载格式
+
+### 指定加载静态图片
+
+```
+String url = "https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_test.gif";
+Glide.with(this)
+	 .asBitmap()
+	 .load(url)
+	 .into(mImageView);
+```
+
+注：
+
+- 串接asBitmap()方法来指定加载静态图片。
+- 如上面url指向的是一张gif图片，Glide加载出来的只是它的第一帧。
+
+### 指定加载动态图片
+
+```
+String url = "https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
+RequestOptions options=new RequestOptions()
+	.error(R.drawable.error)
+	.placeholder(R.drawable.loading);
+Glide.with(this)
+	 .asGif()
+	 .load(url)
+	 .apply(options)
+	 .into(mImageView);
+```
+
+注：
+
+- 串接asGif()方法来指定加载动态图片。
+- 但这里url指向的是一张静态图片，所以Glide加载会出错，加载不出来。
+- 把上面代码中的url指定为`https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_test.gif`，就能成功加载出来了。
 
 ## 指定图片大小
 
@@ -179,10 +246,194 @@ RequestOptions options=new RequestOptions()
 	.error(R.drawable.error)
 	.placeholder(R.drawable.loading)
 	.diskCacheStrategy(DiskCacheStrategy.NONE);
-Glide.with(this).load(url).apply(options).into(mImageView);
+Glide.with(this)
+	 .load(url)
+	 .apply(options)
+	 .into(mImageView);
 ```
 
 注：
 
 - 串接了一个override()方法来指定加载图片的尺寸，这里是将图片加载成100*100像素的尺寸。
 - 如果想加载原图的话，在override()方法中使用Target.SIZE_ORIGINAL，如`.override(Target.SIZE_ORIGINAL)`。
+
+## 缓存机制
+
+### 内存缓存
+
+Glide默认开启了。
+
+禁用它的方法如下：
+
+```
+String url="https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
+RequestOptions options=new RequestOptions()
+	.skipMemoryCache(true);
+Glide.with(this)
+	 .load(url)
+	 .apply(options)
+	 .into(mImageView);
+```
+
+注：
+
+- 使用skipMemoryCache()方法，传入true来禁用Glide的内存缓存功能。
+
+### 硬盘缓存
+
+```
+String url="https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
+RequestOptions options=new RequestOptions()
+	.diskCacheStrategy(DiskCacheStrategy.NONE);
+Glide.with(this)
+	 .load(url)
+	 .apply(options)
+	 .into(mImageView);
+```
+
+注：
+
+- 使用diskCacheStrategy()方法，传入DiskCacheStrategy.NONE来禁用Glide的硬盘缓存功能。
+- 可填参数：
+  - DiskCacheStrategy.NONE：不缓存任何内容。
+  - DiskCacheStrategy.DATA：只缓存原始图片。
+  - DiskCacheStrategy.RESOURCE：只缓存转换过后的图片。
+  - DiskCacheStrategy.ALL：缓存所有图片。
+  - DiskCacheStrategy.AUTOMATIC：Glide智能选择缓存策略。
+
+## 回调与监听
+
+### into()
+
+into()方法可以让加载的图片显示到ImageView上。
+
+自定义Target：
+
+```
+String url = "https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
+SimpleTarget<Drawable> simpleTarget=new SimpleTarget<Drawable>() {
+	@Override
+	public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+		mImageView.setImageDrawable(resource);
+	}
+};
+Glide.with(this)
+	 .load(url)
+	 .into(simpleTarget);
+```
+
+注：
+
+- 创建一个SimpleTarget的实例，并指定为Drawable泛型。
+- 重写onResourceReady()方法来获取加载出来的图片对象。
+- 把它传入into()方法中。
+
+### submit()
+
+使用submit()方法来下载图片。
+
+```
+new Thread(new Runnable() {
+	@Override
+	public void run() {
+		try {
+			String url = "https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
+			final Context context=getApplicationContext();
+			FutureTarget<File> target=Glide.with(context).asFile().load(url).submit();
+			final File file=target.get();
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					Bitmap bitmap= BitmapFactory.decodeFile(file.getPath());
+                      mImageView.setImageBitmap(bitmap);
+                  }
+              });
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}).start();
+```
+
+注：
+
+- 调用submit()方法后会返回一个FutureTarget对象，开始下载图片。
+- 在子线程中下载图片，不然图片还没下载完成就使用get()方法会阻塞线程。
+- 下载完成后，使用FutureTarget的get()方法来获取下载下来的图片文件。
+- 这里使用runOnUiThread()回到主线程并显示图片到ImageView上。
+
+### listener()
+
+listener()方法可以结合into()和preload()方法使用。
+
+```
+String url = "https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
+Glide.with(this)
+	 .load(url)
+	 .listener(new RequestListener<Drawable>() {
+	 	@Override
+	 	public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+	 		Toast.makeText(GlideActivity.this,e+"---onLoadFailed",Toast.LENGTH_SHORT).show();
+	 			return false;
+	 	}
+	 	@Override
+	 	public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+	 		Toast.makeText(GlideActivity.this,resource+"---onResourceReady",Toast.LENGTH_SHORT).show();
+		 	return false;
+	  	}
+      })
+	 .into(mImageView);
+```
+
+注：
+
+- 串接listener()方法并实现一个RequestListener的实例。
+- RequestListener需要实现两个方法：
+  - onLoadFailed()：图片加载失败的时候回调。
+  - onResourceReady()：图片加载完成的时候回调。
+
+### preload()
+
+用preload()方法来预加载图片，等需要用的时候Glide就会直接从缓存中获取图片。
+
+预加载图片：
+
+```
+String url = "https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
+Glide.with(this)
+	 .load(url)
+	 .listener(new RequestListener<Drawable>() {
+	 	@Override
+		 public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+		 	Toast.makeText(GlideActivity.this, "onLoadFailed", Toast.LENGTH_SHORT).show();
+		 		return false;
+		 	}
+		 @Override
+		 public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+		 	Toast.makeText(GlideActivity.this, "onResourceReady", Toast.LENGTH_SHORT).show();
+		 		return false;
+		 	}
+		})
+	 .preload();
+```
+
+使用图片：
+
+```
+String url = "https://raw.githubusercontent.com/lcfu1/Image/master/Android/glide_logo.png";
+Glide.with(this)
+	 .load(url)
+	 .into(mImageView);
+```
+
+注：
+
+- 上面使用preload()方法来预加载图片。
+- preload()方法有两个方法重载：
+  - preload()：不带参，加载图片的原始尺寸。
+  - preload(int width,int height)：带参，指定加载图片的宽高。
+- 这里串接listener()方法来测试是否下载成功。
+
+## 参考
+
+- [https://blog.csdn.net/guolin_blog/article/details/78582548](https://blog.csdn.net/guolin_blog/article/details/78582548)
