@@ -1,6 +1,6 @@
 ## 输出
 
-JavaScript 显示数据：
+JavaScript显示数据的几种方式：
 
 - 使用 **window.alert()** 弹出警告框。
 

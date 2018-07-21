@@ -75,15 +75,16 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
   - [编程风格](Java/CodingStyle.md)
   - [类](Java/class.md)
-  - [URL](Java/读取URL中的资源.md)
+  - [URL](Java/URL.md)
   - [InetAddress类](Java/InetAddress.md)
   - [子类与继承](Java/SubclassesAndInheritance.md)
+  - [String类](Java/String.md)
 
 ## JavaScript
 
 - JavaScript基础
 
-  - [用法](JavaScript/use.md)
+  - [JavaScript](JavaScript/use.md)
   - [输出](JavaScript/output.md)
 
 ## jQuery
