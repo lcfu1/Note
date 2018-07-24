@@ -1,8 +1,29 @@
-# 基础
+# 速查列表
 
 目录
 
 - [标题](#标题)
+- [段落](#段落)
+- [链接](#链接)
+- [图片](#图片)
+- [水平线](#水平线)
+- [注释](#注释)
+- [折行](#折行)
+- [文本格式化](#文本格式化)
+- [表格](#表格)
+- [有序列表](#有序列表)
+- [无序列表](#无序列表)
+- [自定义列表](#自定义列表)
+- [区块](#区块)
+- [样式](#样式)
+- [使用`<table>`元素的网页布局](#使用table元素的网页布局)
+- [使用`<div>`元素的网页布局](#使用div元素的网页布局)
+- [表单](#表单)
+- [框架](#框架)
+- [字符实体](#字符实体)
+- [URL](#url)
+- [ASCII字符集](#ascii字符集)
+- [URL编码](url编码)
 
 ## 标题
 
@@ -25,6 +46,9 @@
 
 ```
 <a href="https://lcfu1.github.io/Note/" target="_blank">链接</a>
+
+<a id="tips">提示部分</a>
+<a href="#tips">跳到提示部分</a>
 ```
 
 注：
@@ -78,93 +102,31 @@
 
 - `<br/>`是一个空的 HTML 元素，关闭标签没有任何意义，所以它没有结束标签。 
 
-## 粗体
+## 文本格式化
 
 ```
-<b>粗体</b>
-```
-
-## 斜体
-
-```
-<i>斜体</i>
-```
-
-## 上标
-
-```
-<sup>上标</sup>
-```
-
-## 下标
-
-```
-<sub>下标</sub>
-```
-
-## 插入
-
-```
-<ins>插入</ins>
-```
-
-## 删除
-
-```
-<del>删除</del>
-```
-
-## 着重
-
-```
-<em>着重</em>
-```
-
-## 小号
-
-```
-<small>小号</small>
-```
-
-## 加重
-
-```
-<strong>加重</strong>
-```
-
-## 块引用
-
-```
-<q>Hello</q>
-```
-
-## 文字方向
-
-```
+<b>粗体文本</b>
+<code>计算机代码</code>
+<em>强调文本</em>
+<i>斜体文本</i>
+<kbd>键盘输入</kbd> 
+<pre>预格式化文本</pre>
+<small>更小的文本</small>
+<strong>重要的文本</strong>
+<q>块引用</q>
+<abbr title="我是缩写的">缩写</abbr>
+<acronym title="首字母缩写">缩写</acronym>
+<address><a href="mailto:lcfu1@qq.com">lcfu1</a>.<br> </address>
 <bdo dir="rtl">从右到左显示</bdo>
-```
-
-## 缩写和首字母缩写
-
-```
-<abbr title="hello">hel</abbr>
-<acronym title="hi">h</acronym>
-```
-
-## 地址
-
-```
-<address>
-<a href="mailto:lcfu1@qq.com">lcfu1</a>.<br> 
-</address>
-```
-
-## 预格式文本
-
-```
+<blockquote>从另一个源引用的部分</blockquote>
+<cite>工作的名称</cite>
+<del>删除的文本</del>
+<ins>插入的文本</ins>
+<sub>下标文本</sub>
+<sup>上标文本</sup>
 <pre>
-A B
-C D E
+    预格式
+文本
 </pre>
 ```
 
@@ -282,7 +244,7 @@ C D E
 - `<dt>`：自定义列表项目。
 - `<dd>`：自定义列表项的描述。
 
-## `<div>`
+## 区块
 
 ```
 <p>段落</p>
@@ -290,22 +252,23 @@ C D E
 	<p>段落</p>
 	<p>段落</p>
 </div>
-<p>段落</p>
-```
-
-注：
-
-- 块级元素，浏览器会在其前后显示折行。
-
-## `<span>`
-
-```
 <p>A <span style="color:red;font-weight:bold">B</span> C</p>
 ```
 
 注：
 
-- 内联元素，用来组合文档中的行内元素。
+- `<div>`块级元素，浏览器会在其前后显示折行。
+
+- `<span>`内联元素，用来组合文档中的行内元素。
+
+## 样式
+
+```
+<style type="text/css">
+h1 {color:red;}
+</style>
+<h1>A</h1>
+```
 
 ## 使用`<table>`元素的网页布局
 
@@ -342,3 +305,66 @@ C D E
 </div>
 ```
 
+## 表单
+
+用于收集不同类型的用户输入，包含表单元素。
+
+表单元素是允许用户在表单中输入内容，如：文本域(textarea)、下拉列表、单选按钮(radio-buttons)、复选框(checkboxes)等等。 
+
+```
+<form name="input" action="" method="get">
+username: <input type="text" name="user"><br>
+password: <input type="password" name="password"><br>
+<input type="submit" value="submit">
+</form>
+```
+
+## 框架
+
+使用框架可在同一个浏览器窗口中显示多个页面。 
+
+```
+<iframe style="background-color:grey;" name="iframe" width="400" height="200" frameborder="0"></iframe></br>
+<a href="https://lcfu1.github.io/Note/" target="iframe">点击</a>
+```
+
+注：
+
+- frameborder属性表示是否显示边框。
+
+## 字符实体
+
+是html中的预留字符，对大小写敏感 。
+
+```
+&nbsp;	指空格
+&quot;	引号
+...
+```
+
+[更多](https://www.runoob.com/html/html-entities.html)
+
+## URL
+
+统一资源定位器(Uniform Resource Locators)
+
+```
+scheme://host.domain:port/path/filename
+```
+
+注：
+
+- scheme：定义因特网服务的类型。最常见的类型是http(超文本传输协议)、https(安全超文本传输协议)、ftp(文件传输协议)。
+- host：定义域主机（http的默认主机是www）。
+- domain：定义因特网域名，比如 runoob.com。
+- :port：定义主机上的端口号（http 的默认端口号是 80）。
+- path：定义服务器上的路径（如果省略，则文档必须位于网站的根目录中）。
+- filename：定义文档/资源的名称。
+
+## ASCII字符集
+
+[参考](https://www.runoob.com/tags/html-ascii.html)
+
+## URL编码
+
+[参考](https://www.runoob.com/tags/html-urlencode.html)

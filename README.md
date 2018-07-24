@@ -15,16 +15,15 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
 - AndroidStudio
 
-  - [AndroidStudio](Android/AndroidStudio.md)
-  - [Android知识点](Android/AndroidKnowledge.md)
+  - [AndroidStudio](Android/AndroidStudio/AndroidStudio.md)
 
 - Network
 
   - [WebView](Android/Network/WebView.md)
   - [HttpURLConnection](Android/Network/HttpURLConnection.md)
   - [OkHttp](Android/Network/OkHttp.md)
-  - [XML](Android/Network/XML.md)
-  - [JSON](Android/Network/JSON.md)
+  - [解析XML格式的数据](Android/Network/XML.md)
+  - [解析JSON格式的数据](Android/Network/JSON.md)
 
 - Util
 
@@ -32,25 +31,29 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
   - [HttpURLConnectionUtil](Android/Util/HttpURLConnectionUtil.md)
   - [OkHttpUtil](Android/Util/OkHttpUtil.md)
 
-- SQL
-
-  - [LitePal](Android/SQL/LitePal.md)
-
 - Theme
 
   - [动态修改主题](Android/Theme/setTheme.md)
 
 - architecture
-  
+
   - [MVP](Android/Architecture/MVP.md)
-  
-- Glide
-  
-  - [Glide用法](Android/Glide/Glide.md)
+
+- Library
+
+  - [学习封装库](Android/Library/LearnLib.md)
+  - [Glide用法](Android/Library/Glide.md)
+  - [LitePal](Android/Library/LitePal.md)
 
 - Android面试题
 
   - [面试题](Android/Interview/interview.md)
+
+## Git
+
+- 笔记
+
+  - [Git命令总结](Git/git1.md)
 
 ## Groovy
 
@@ -58,16 +61,12 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
   - [Groovy入门](Groovy/Groovy.md)
   
-## Kotlin
+## HTML
 
-- kotlin基础
+- html
 
-  - [简介](Kotlin/Kotlin.md)
-  - [基础语法](Kotlin/BasicGrammar.md)
-  - [基本数据类型](Kotlin/PrimaryDataType.md)
-  - [循环控制](Kotlin/CycleControl.md)
-  - [条件控制](Kotlin/ConditionControl.md)
-  - [类和对象](Kotlin/class.md)
+  - [html](HTML/html.md)
+  - [速查列表](HTML/QuickList.md)
 
 ## Java
 
@@ -100,11 +99,22 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
   - [滑动](jQuery/slide.md)
   - [动画](jQuery/animate.md)
 
-## Git
+## Kotlin
+
+- kotlin基础
+
+  - [简介](Kotlin/Kotlin.md)
+  - [基础语法](Kotlin/BasicGrammar.md)
+  - [基本数据类型](Kotlin/PrimaryDataType.md)
+  - [循环控制](Kotlin/CycleControl.md)
+  - [条件控制](Kotlin/ConditionControl.md)
+  - [类和对象](Kotlin/class.md)
+
+## Markdown
 
 - 笔记
 
-  - [Git命令总结](Git/git1.md)
+  - [基础语法](Markdown/markdown.md)
 
 ## SVG
 
@@ -113,12 +123,6 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
   - [SVG(1)](SVG/SVG1.md)
   - [SVG(2)](SVG/SVG2.md)
   - [SVG(3)](SVG/SVG3.md)
-
-## Markdown
-
-- 笔记
-
-  - [基础语法](Markdown/markdown.md)
 
 ## UseNote
 
@@ -158,3 +162,4 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 - Java
 
   - java 2 实用教程(第四版)
+  - java编程思想
