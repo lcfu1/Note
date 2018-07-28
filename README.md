@@ -63,10 +63,15 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
   
 ## HTML
 
-- html
+- HTML
 
-  - [html](HTML/html.md)
-  - [速查列表](HTML/QuickList.md)
+  - [html](HTML/HTML.md)
+  - [速查列表](HTML/html_QuickList.md)
+  
+- CSS
+
+  - [CSS](HTML/CSS.md)
+  - [背景](HTML/css_background.md)
 
 ## Java
 
