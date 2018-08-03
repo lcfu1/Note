@@ -35,6 +35,10 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
   - [动态修改主题](Android/Theme/setTheme.md)
 
+- Dialog
+
+  - [CustomDialog](Android/Dialog/CustomDialog.md)
+
 - architecture
 
   - [MVP](Android/Architecture/MVP.md)
