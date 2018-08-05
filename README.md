@@ -60,6 +60,11 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
   - [Git命令总结](Git/git1.md)
 
+## Aliyun
+
+- SVN
+  - [SVN教程](Aliyun/SVN.md)
+
 ## Groovy
 
 - Groovy知识
@@ -119,6 +124,12 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
   - [循环控制](Kotlin/CycleControl.md)
   - [条件控制](Kotlin/ConditionControl.md)
   - [类和对象](Kotlin/class.md)
+
+## Oracle
+
+- 基础
+
+  - [简单的查询语句](Oracle/SampleQuery.md)
 
 ## Markdown
 
