@@ -1,10 +1,19 @@
 # Xshell
 
+目录：
+
+- [下载安装Xshell](#下载安装xshell)
+- [打开Xshell](#打开xshell)
+- [新建](#新建)
+- [连接](#连接)
+- [输入用户名](#输入用户名)
+- [输入密码](#输入密码)
+
 ## 下载安装Xshell
 
 用于远程连接服务器并执行命令的工具。
 
-下载Xshell：[http://baoku.360.cn/soft/show/appid/101306](http://baoku.360.cn/soft/show/appid/101306)。
+下载并安装Xshell：[http://baoku.360.cn/soft/show/appid/101306](http://baoku.360.cn/soft/show/appid/101306)。
 
 ## 打开Xshell
 
@@ -15,6 +24,12 @@
 ## 新建
 
 ![Xshell_2.PNG](https://raw.githubusercontent.com/lcfu1/Note/master/Aliyun/image/Xshell_2.PNG)
+
+注：
+
+- 主机填上公网IP地址。
+- 端口号不要修改，保留为22。
+- 协议为SSH。
 
 ## 连接
 

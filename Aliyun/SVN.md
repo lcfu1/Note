@@ -14,6 +14,14 @@
 
 在Ubuntu中安装SVN，如：`sudo apt-get install subversion`。
 
+可能会遇到如下问题：
+
+![svn1.PNG](https://raw.githubusercontent.com/lcfu1/Note/master/Aliyun/image/svn1.PNG)
+
+可使用如下方法解决：
+
+![AptGetUpdate.PNG](https://raw.githubusercontent.com/lcfu1/Note/master/Aliyun/image/AptGetUpdate.PNG)
+
 ## 建立SVN仓库
 
 - 建立svn目录：`sudo mkdir /home/.svn`(使用隐藏目录)。

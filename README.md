@@ -62,7 +62,16 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
 ## Aliyun
 
+- Xshell
+
+  - [Xshell](Aliyun/Xshell.md)
+
+- Xftp
+
+  - [Xftp](Aliyun/Xftp.md)
+
 - SVN
+
   - [SVN教程](Aliyun/SVN.md)
 
 ## Groovy
@@ -129,7 +138,10 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
 
 - 基础
 
+  - [数据库](Oracle/Database.md)
   - [简单的查询语句](Oracle/SampleQuery.md)
+  - [多表连接](Oracle/MultiJoinTable.md)
+  - [分组函数](Oracle/GroupFunction.md)
 
 ## Markdown
 
