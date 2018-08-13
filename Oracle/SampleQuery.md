@@ -21,14 +21,14 @@
 - [比较数值型数据](#比较数值型数据)
 - [比较字符型数据](#比较字符型数据)
 - [比较日期型数据](#比较日期型数据)
-- [BETWEEN AND](#betweenand)
+- [BETWEEN AND](#between-and)
 - [IN](#in)
 - [LIKE](#like)
-- [IS NULL](#isnull)
+- [IS NULL](#is-null)
 - [AND](#and)
 - [OR](#or)
 - [NOT](#not)
-- [ORDER BY子句](#orderby子句)
+- [ORDER BY子句](#order-by子句)
 - [按列名升序排序](#按列名升序排序)
 - [按列名降序排序](#按列名降序排序)
 - [按列别名排序](#按列别名排序)
@@ -42,10 +42,10 @@ SQL(Structured Query Language)，结构化查询语言。
 ## 结构化查询语言分类
 
 - 数据查询语言（DQL:Data Query Language）：语句主要包括 SELECT，用于从表中检索数据。
-- 数据操作语言（DML：Data Manipulation Language）：语句主 要包括INSERT，UPDATE和DELETE，用于添加，修改和删除表中的 行数据。
-- 事务处理语言（TPL:Transaction Process Language）：语句 主要包括COMMIT和ROLLBACK，用于提交和回滚。
-- 数据控制语言（DCL:Data Control Language）：语句主要包括 GRANT和REVOKE，用于进行授权和收回权限。
-- 数据定义语言（DDL:Data Definition Language）：语句主要包 括CREATE、DROP、ALTER，用于定义、销毁、修改数据库对象。
+- 数据操作语言（DML：Data Manipulation Language）：语句主要包括INSERT，UPDATE和DELETE，用于添加，修改和删除表中的行数据。
+- 事务处理语言（TPL:Transaction Process Language）：语句主要包括COMMIT和ROLLBACK，用于提交和回滚。
+- 数据控制语言（DCL:Data Control Language）：语句主要包括GRANT和REVOKE，用于进行授权和收回权限。
+- 数据定义语言（DDL:Data Definition Language）：语句主要包括CREATE、DROP、ALTER，用于定义、销毁、修改数据库对象。
 
 ## SQL概念和规则
 
