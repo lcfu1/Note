@@ -142,6 +142,8 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
   - [简单的查询语句](Oracle/SampleQuery.md)
   - [多表连接](Oracle/MultiJoinTable.md)
   - [分组函数](Oracle/GroupFunction.md)
+  - [子查询](Oracle/Subquery.md)
+  - [嵌套查询](Oracle/NestedSubquery.md)
 
 ## Markdown
 
