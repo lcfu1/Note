@@ -301,7 +301,7 @@ public class UserServiceImpl implements IBaseService<User>{
 
 测试代码如下：
 
-test/java/TestUserDaoImpl.java
+test/java/TestUserServiceImpl.java
 
 ```
 import dto.User;
@@ -313,7 +313,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TestUserDaoImpl {
+public class TestUserServiceImpl {
     UserServiceImpl usi=new UserServiceImpl();
 
     @Test
