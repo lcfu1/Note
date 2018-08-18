@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 //控制层 @controller控制层组件，被扫描后会注册成bean
 @Controller
-@RequestMapping("/sucess")
+@RequestMapping("/success")
 public class UserController {
     //请求映射
     @RequestMapping("/add")
