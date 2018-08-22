@@ -16,6 +16,16 @@
 在build.gradle中添加以下依赖：
 
 ```
+//mysql
+compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.26'
+
+//spring依赖包
+// https://mvnrepository.com/artifact/org.springframework/spring-tx
+compile group: 'org.springframework', name: 'spring-tx', version: '4.3.14.RELEASE'
+
+// https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.14.RELEASE'
+
 //springMVC包
 compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.14.RELEASE'
 ```
@@ -108,6 +118,35 @@ public class UserController {
 步骤3：
 
 ![mvc9](https://raw.githubusercontent.com/lcfu1/Note/master/JavaWeb/image/mvc9.PNG)
+
+修改web.xml的内容如下：
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!--servlet的配置-->
+    <servlet>
+        <servlet-name>springMVCDisptch</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!--初始化参数,启动springMVC容器-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:config/springmvc.xml</param-value>
+        </init-param>
+        <!--启动顺序-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!--servlet mapping 配置-->
+    <servlet-mapping>
+        <servlet-name>springMVCDisptch</servlet-name>
+        <!--&lt;!&ndash;对所有请求进行处理-，/*.action，拦截所有以.action结尾的文件->-->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>
+```
 
 在webapp/WEB-INF下新建一个views的包，然后在views包下新建add.jsp、delete.jsp、update.jsp、findById.jsp、findByProp.java，如下：
 

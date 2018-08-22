@@ -115,6 +115,9 @@ Theme：[SimpleTheme](https://github.com/lcfu1/SimpleTheme)
   - [SpringIOC](JavaWeb/SpringIOC.md)
   - [SpringAOP](JavaWeb/SpringAOP.md)
   - [SpringMVC](JavaWeb/SpringMVC.md)
+  - [数据交互](JavaWeb/DataInteraction.md)
+  - [上传下载文件](JavaWeb/FileUploadDownload.md)
+  - [MyBatis](JavaWeb/MyBatis.md)
 
 ## JavaScript
 
