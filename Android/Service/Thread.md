@@ -218,11 +218,7 @@ AsyncTask是一个抽象类，通过创建一个子类继承它来使用，有3�
 另外需要重写的方法如下：
 
 1. onPreExecute：在后台任务开始执行前调用，可用于进行一些界面上的初始化操作。
-
 2. doInBackground(Params...)：里面的代码会在子线程中运行，可在里面进行耗时任务，任务完成后可通过return返回执行结果，还可调用publishProgress(Progress...)方法来更新执行进度。
-
 3. onProgressUpdate(Progress...)：当后台任务中调用publishProgress(Progress...)方法后，onProgressUpdate(Progress...)方法就会很快被调用，它携带的参数就是后台任务中传递过来的，可在这里对UI进行操作。
-
 4. onPostExecute(Result)：当后台任务执行完毕并通过return返回时，就会调用这个方法，返回的数据Result会作为参数传递给它，还可利用Result进行UI操作。
 
-   
